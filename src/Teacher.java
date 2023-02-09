@@ -1,42 +1,21 @@
-import bean.NotBeNull;
 
+import bean.WritingStyle;
+import lombok.Data;
+import lombok.SneakyThrows;
+
+@Data
 public class Teacher {
-    @NotBeNull
-    private String name = null;
-    private String surname;
-    private int age;
+    @WritingStyle
+    private String tName;
+    private String teacherSurname;
+    private int teacherAge;
+    private double salary;
 
-    public Teacher(String name, String surname, int age) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
+    @SneakyThrows //Exception-nin qarsisini aldi.
+    public void foo(int a){
+        if (a>9){
+            throw new Exception();
+        }
     }
 
-    public Teacher() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 }
