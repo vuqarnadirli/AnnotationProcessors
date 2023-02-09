@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="AnnotationProcessorLib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../AnnotationProcessorLib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../AnnotationProcessorLib/src" />
+    </SOURCES>
+  </library>
+</component>
